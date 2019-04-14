@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    //把版排好。gulp压缩 打包流畅。
+    .header {
+        width: 100%;
+        height: 88px;
+        div {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            line-height: 88px;
+
+            input {
+                margin-top: 25px;
+                height: 50px;
+                width: 300px;
+            }
+        }
+    }
+
+    .main {
+        width: 100%;
+        flex: 1;
+        overflow-y: scroll;
+        .banner {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+
+            .contain {
+                width: 100%;
+                height: 300px;
+
+                .swiper-slide {
+                    img {
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+
+        .swiper-slide {
+            .img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+
+            a {
+                width: 20%;
+                height: 140px;
+                text-decoration: none;
+                align-items: center;
+
+                i {
+                    font-size: 42px;
+                    color: orange;
+                }
+
+                p {
+                    color: #000;
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .mainlist {
+            width: 100%;
+            dl {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+                dd {
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+                dt{
+                    line-height:60px;
+                }
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        height: 88px;
+       
+    }
+}
